@@ -1,13 +1,7 @@
 <?php
-
-\Magento\Framework\Component\ComponentRegistrar::register(
-
-    \Magento\Framework\Component\ComponentRegistrar::MODULE,
-
-    'i95dev_admin',
-
-    __DIR__
-
-);
-
-?>
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+use \Magento\Framework\Component\ComponentRegistrar;
+ComponentRegistrar::register(ComponentRegistrar::THEME, 'adminhtml/i95dev/admin', __DIR__); // Example: 'adminhtml/Magento/backend'
